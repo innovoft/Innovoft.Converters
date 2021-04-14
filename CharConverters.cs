@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Innovoft
 {
-	public static class CharConverter
+	public static class CharConverters
 	{
 		#region Constants
 		public const char NUL = '\0';
