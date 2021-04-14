@@ -59,6 +59,7 @@ namespace Innovoft
 		public const byte SquareClose = 0x5D;
 		public const byte CurlyOpen = 0x7B;
 		public const byte CurlyClose = 0x7D;
+		public const byte Z = 0x5A;
 		#endregion //Constants
 
 		#region Methods
