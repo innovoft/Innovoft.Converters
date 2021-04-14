@@ -44,6 +44,8 @@ namespace Innovoft
 		public const byte DoubleQuote = 0x22;
 		public const byte SingleQuote = 0x27;
 		public const byte Comma = 0x2C;
+		public const byte Minus = 0x2D;
+		public const byte Dash = 0x2D;
 		public const byte Digit0 = 0x30;
 		public const byte Digit1 = 0x31;
 		public const byte Digit2 = 0x32;
