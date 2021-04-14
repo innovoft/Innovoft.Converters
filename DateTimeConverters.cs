@@ -7,7 +7,7 @@ namespace Innovoft
 	public static class DateTimeConverters
 	{
 		#region Constants
-		private const char Z = CharConverters.Z;
+		private const char ZChar = CharConverters.Z;
 		#endregion //Constants
 
 		#region Methods
@@ -104,49 +104,49 @@ namespace Innovoft
 					break;
 
 				case 20://yyyy-MM-ddTHH:mm:ss.f
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 1 * (letter - 0x30);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1_000 * (letter - 0x30);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1 * (letter - 0x30);
 					}
@@ -257,49 +257,49 @@ namespace Innovoft
 					break;
 
 				case 20://yyyy-MM-ddTHH:mm:ss.f
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 1 * (letter - 0x30);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1_000 * (letter - 0x30);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1 * (letter - 0x30);
 					}
@@ -411,49 +411,49 @@ namespace Innovoft
 					break;
 
 				case 20://yyyy-MM-ddTHH:mm:ss.f
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						milli += 1 * (letter - 0x30);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1_000 * (letter - 0x30);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 100 * (letter - 0x30);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 10 * (letter - 0x30);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
-					if (letter != Z)
+					if (letter != ZChar)
 					{
 						ticks += 1 * (letter - 0x30);
 					}
