@@ -920,12 +920,16 @@ namespace Innovoft
 					break;
 				}
 			}
-			if (day <= 0)
+			DateTime temp;
+			try
+			{
+				temp = new DateTime(year, month, day, hour, minute, second, milli, DateTimeKind.Utc);
+			}
+			catch
 			{
 				value = default;
 				return false;
 			}
-			var temp = new DateTime(year, month, day, hour, minute, second, milli, DateTimeKind.Utc);
 			if (ticks <= 0)
 			{
 				value = temp;
