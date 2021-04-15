@@ -10,7 +10,9 @@
 		(Type: "char[]", Which: "Char", Region: false ),
 		(Type: "byte[]", Which: "Byte", Region: false ),
 		(Type: "ReadOnlySpan<char>", Which: "Char", Region: true ),
+		(Type: "Span<char>", Which: "Char", Region: true ),
 		(Type: "ReadOnlySpan<byte>", Which: "Byte", Region: true ),
+		(Type: "Span<byte>", Which: "Byte", Region: true ),
 	};
 	bool line;
 #>
