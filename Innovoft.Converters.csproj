@@ -14,6 +14,10 @@
     <RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/innovoft/Innovoft.Converters</PackageProjectUrl>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<!--T4-->
+		<TransformOnBuild>true</TransformOnBuild>
+		<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
+		<TransformOutOfDateOnly>false</TransformOutOfDateOnly>
 	</PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -29,5 +33,8 @@
 	<ItemGroup>
 		<None Remove=".gitignore" />
 	</ItemGroup>
+
+	<!--T4-->
+	<Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TextTemplating\Microsoft.TextTemplating.targets" />
 
 </Project>
