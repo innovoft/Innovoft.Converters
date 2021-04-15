@@ -24,6 +24,16 @@ namespace Innovoft
 		public const char BraceOpen = '{';
 		public const char BraceClose = '}';
 		public const char Comma = ',';
+		public const char Digit0 = '0';
+		public const char Digit1 = '1';
+		public const char Digit2 = '2';
+		public const char Digit3 = '3';
+		public const char Digit4 = '4';
+		public const char Digit5 = '5';
+		public const char Digit6 = '6';
+		public const char Digit7 = '7';
+		public const char Digit8 = '8';
+		public const char Digit9 = '9';
 		public const char Z = 'Z';
 		public const char z = 'z';
 		#endregion //Constants
