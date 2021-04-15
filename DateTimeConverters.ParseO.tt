@@ -82,74 +82,74 @@ namespace Innovoft
 				switch (offset)
 				{
 				case 0://y
-					year = 1000 * (letter - 0x30);
+					year = 1000 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 1://yy
-					year += 100 * (letter - 0x30);
+					year += 100 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 2://yyy
-					year += 10 * (letter - 0x30);
+					year += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 3://yyyy
-					year += 1 * (letter - 0x30);
+					year += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 4://yyyy-
 					break;
 
 				case 5://yyyy-M
-					month += 10 * (letter - 0x30);
+					month += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 6://yyyy-MM
-					month += 1 * (letter - 0x30);
+					month += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 7://yyyy-MM-
 					break;
 
 				case 8://yyyy-MM-d
-					day += 10 * (letter - 0x30);
+					day += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 9://yyyy-MM-dd
-					day += 1 * (letter - 0x30);
+					day += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 10://yyyy-MM-ddT
 					break;
 
 				case 11://yyyy-MM-ddTH
-					hour += 10 * (letter - 0x30);
+					hour += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 12://yyyy-MM-ddTHH
-					hour += 1 * (letter - 0x30);
+					hour += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 13://yyyy-MM-ddTHH:
 					break;
 
 				case 14://yyyy-MM-ddTHH:m
-					minute += 10 * (letter - 0x30);
+					minute += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 15://yyyy-MM-ddTHH:mm
-					minute += 1 * (letter - 0x30);
+					minute += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 16://yyyy-MM-ddTHH:mm:
 					break;
 
 				case 17://yyyy-MM-ddTHH:mm:s
-					second += 10 * (letter - 0x30);
+					second += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 18://yyyy-MM-ddTHH:mm:ss
-					second += 1 * (letter - 0x30);
+					second += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 19://yyyy-MM-ddTHH:mm:ss.
@@ -158,49 +158,49 @@ namespace Innovoft
 				case 20://yyyy-MM-ddTHH:mm:ss.f
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 100 * (letter - 0x30);
+						milli += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 10 * (letter - 0x30);
+						milli += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 1 * (letter - 0x30);
+						milli += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1_000 * (letter - 0x30);
+						ticks += 1_000 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 100 * (letter - 0x30);
+						ticks += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 10 * (letter - 0x30);
+						ticks += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1 * (letter - 0x30);
+						ticks += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 				}
@@ -250,74 +250,74 @@ namespace Innovoft
 				switch (i)
 				{
 				case 0://y
-					year = 1000 * (letter - 0x30);
+					year = 1000 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 1://yy
-					year += 100 * (letter - 0x30);
+					year += 100 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 2://yyy
-					year += 10 * (letter - 0x30);
+					year += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 3://yyyy
-					year += 1 * (letter - 0x30);
+					year += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 4://yyyy-
 					break;
 
 				case 5://yyyy-M
-					month += 10 * (letter - 0x30);
+					month += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 6://yyyy-MM
-					month += 1 * (letter - 0x30);
+					month += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 7://yyyy-MM-
 					break;
 
 				case 8://yyyy-MM-d
-					day += 10 * (letter - 0x30);
+					day += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 9://yyyy-MM-dd
-					day += 1 * (letter - 0x30);
+					day += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 10://yyyy-MM-ddT
 					break;
 
 				case 11://yyyy-MM-ddTH
-					hour += 10 * (letter - 0x30);
+					hour += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 12://yyyy-MM-ddTHH
-					hour += 1 * (letter - 0x30);
+					hour += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 13://yyyy-MM-ddTHH:
 					break;
 
 				case 14://yyyy-MM-ddTHH:m
-					minute += 10 * (letter - 0x30);
+					minute += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 15://yyyy-MM-ddTHH:mm
-					minute += 1 * (letter - 0x30);
+					minute += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 16://yyyy-MM-ddTHH:mm:
 					break;
 
 				case 17://yyyy-MM-ddTHH:mm:s
-					second += 10 * (letter - 0x30);
+					second += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 18://yyyy-MM-ddTHH:mm:ss
-					second += 1 * (letter - 0x30);
+					second += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 19://yyyy-MM-ddTHH:mm:ss.
@@ -326,49 +326,49 @@ namespace Innovoft
 				case 20://yyyy-MM-ddTHH:mm:ss.f
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 100 * (letter - 0x30);
+						milli += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 10 * (letter - 0x30);
+						milli += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 1 * (letter - 0x30);
+						milli += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1_000 * (letter - 0x30);
+						ticks += 1_000 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 100 * (letter - 0x30);
+						ticks += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 10 * (letter - 0x30);
+						ticks += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1 * (letter - 0x30);
+						ticks += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 				}
@@ -418,74 +418,74 @@ namespace Innovoft
 				switch (offset)
 				{
 				case 0://y
-					year = 1000 * (letter - 0x30);
+					year = 1000 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 1://yy
-					year += 100 * (letter - 0x30);
+					year += 100 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 2://yyy
-					year += 10 * (letter - 0x30);
+					year += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 3://yyyy
-					year += 1 * (letter - 0x30);
+					year += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 4://yyyy-
 					break;
 
 				case 5://yyyy-M
-					month += 10 * (letter - 0x30);
+					month += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 6://yyyy-MM
-					month += 1 * (letter - 0x30);
+					month += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 7://yyyy-MM-
 					break;
 
 				case 8://yyyy-MM-d
-					day += 10 * (letter - 0x30);
+					day += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 9://yyyy-MM-dd
-					day += 1 * (letter - 0x30);
+					day += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 10://yyyy-MM-ddT
 					break;
 
 				case 11://yyyy-MM-ddTH
-					hour += 10 * (letter - 0x30);
+					hour += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 12://yyyy-MM-ddTHH
-					hour += 1 * (letter - 0x30);
+					hour += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 13://yyyy-MM-ddTHH:
 					break;
 
 				case 14://yyyy-MM-ddTHH:m
-					minute += 10 * (letter - 0x30);
+					minute += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 15://yyyy-MM-ddTHH:mm
-					minute += 1 * (letter - 0x30);
+					minute += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 16://yyyy-MM-ddTHH:mm:
 					break;
 
 				case 17://yyyy-MM-ddTHH:mm:s
-					second += 10 * (letter - 0x30);
+					second += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 18://yyyy-MM-ddTHH:mm:ss
-					second += 1 * (letter - 0x30);
+					second += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 19://yyyy-MM-ddTHH:mm:ss.
@@ -494,49 +494,49 @@ namespace Innovoft
 				case 20://yyyy-MM-ddTHH:mm:ss.f
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 100 * (letter - 0x30);
+						milli += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 10 * (letter - 0x30);
+						milli += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 1 * (letter - 0x30);
+						milli += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1_000 * (letter - 0x30);
+						ticks += 1_000 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 100 * (letter - 0x30);
+						ticks += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 10 * (letter - 0x30);
+						ticks += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1 * (letter - 0x30);
+						ticks += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 				}
@@ -597,74 +597,74 @@ namespace Innovoft
 				switch (i)
 				{
 				case 0://y
-					year = 1000 * (letter - 0x30);
+					year = 1000 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 1://yy
-					year += 100 * (letter - 0x30);
+					year += 100 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 2://yyy
-					year += 10 * (letter - 0x30);
+					year += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 3://yyyy
-					year += 1 * (letter - 0x30);
+					year += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 4://yyyy-
 					break;
 
 				case 5://yyyy-M
-					month += 10 * (letter - 0x30);
+					month += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 6://yyyy-MM
-					month += 1 * (letter - 0x30);
+					month += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 7://yyyy-MM-
 					break;
 
 				case 8://yyyy-MM-d
-					day += 10 * (letter - 0x30);
+					day += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 9://yyyy-MM-dd
-					day += 1 * (letter - 0x30);
+					day += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 10://yyyy-MM-ddT
 					break;
 
 				case 11://yyyy-MM-ddTH
-					hour += 10 * (letter - 0x30);
+					hour += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 12://yyyy-MM-ddTHH
-					hour += 1 * (letter - 0x30);
+					hour += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 13://yyyy-MM-ddTHH:
 					break;
 
 				case 14://yyyy-MM-ddTHH:m
-					minute += 10 * (letter - 0x30);
+					minute += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 15://yyyy-MM-ddTHH:mm
-					minute += 1 * (letter - 0x30);
+					minute += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 16://yyyy-MM-ddTHH:mm:
 					break;
 
 				case 17://yyyy-MM-ddTHH:mm:s
-					second += 10 * (letter - 0x30);
+					second += 10 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 18://yyyy-MM-ddTHH:mm:ss
-					second += 1 * (letter - 0x30);
+					second += 1 * (letter - Digit0<#= arg.Which #>);
 					break;
 
 				case 19://yyyy-MM-ddTHH:mm:ss.
@@ -673,49 +673,49 @@ namespace Innovoft
 				case 20://yyyy-MM-ddTHH:mm:ss.f
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 100 * (letter - 0x30);
+						milli += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 21://yyyy-MM-ddTHH:mm:ss.ff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 10 * (letter - 0x30);
+						milli += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 22://yyyy-MM-ddTHH:mm:ss.fff
 					if (letter != Z<#= arg.Which #>)
 					{
-						milli += 1 * (letter - 0x30);
+						milli += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 23://yyyy-MM-ddTHH:mm:ss.ffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1_000 * (letter - 0x30);
+						ticks += 1_000 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 24://yyyy-MM-ddTHH:mm:ss.fffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 100 * (letter - 0x30);
+						ticks += 100 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 25://yyyy-MM-ddTHH:mm:ss.ffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 10 * (letter - 0x30);
+						ticks += 10 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 
 				case 26://yyyy-MM-ddTHH:mm:ss.fffffff
 					if (letter != Z<#= arg.Which #>)
 					{
-						ticks += 1 * (letter - 0x30);
+						ticks += 1 * (letter - Digit0<#= arg.Which #>);
 					}
 					break;
 				}
