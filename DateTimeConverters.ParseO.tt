@@ -4,7 +4,7 @@
 <#@ import namespace="System.Text" #>
 <#@ output extension=".cs" #>
 <#
-	var completeAlls = new List<(string Type, string Which)>()
+	var argsComplete = new List<(string Type, string Which)>()
 	{
 		(Type: "string", Which: "Char" ),
 		(Type: "char[]", Which: "Char" ),
@@ -25,7 +25,7 @@ namespace Innovoft
 	line = false;
 #>
 <#
-	foreach (var arg in completeAlls)
+	foreach (var arg in argsComplete)
 	{
 		if (line)
 		{
