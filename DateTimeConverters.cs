@@ -863,6 +863,11 @@ namespace Innovoft
 			return TryParseO(parse, DateTimeKind.Local, out value);
 		}
 
+		public static bool TryParseOU(ReadOnlySpan<char> parse, out DateTime value)
+		{
+			return TryParseO(parse, DateTimeKind.Unspecified, out value);
+		}
+
 		public static bool TryParseO(ReadOnlySpan<char> parse, DateTimeKind kind, out DateTime value)
 		{
 			//yyyy-MM-ddTHH:mm:ss.fffffffZ
