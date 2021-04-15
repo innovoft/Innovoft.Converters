@@ -690,6 +690,11 @@ namespace Innovoft
 			return ParseO(parse, DateTimeKind.Utc);
 		}
 
+		public static DateTime ParseOL(ReadOnlySpan<byte> parse)
+		{
+			return ParseO(parse, DateTimeKind.Local);
+		}
+
 		public static DateTime ParseO(ReadOnlySpan<byte> parse, DateTimeKind kind)
 		{
 			//yyyy-MM-ddTHH:mm:ss.fffffffZ
