@@ -4,17 +4,13 @@
 <#@ import namespace="System.Text" #>
 <#@ output extension=".cs" #>
 <#
-	var argsComplete = new List<(string Type, string Which)>()
+	var args = new List<(string Type, string Which, bool Region)>()
 	{
-		(Type: "string", Which: "Char" ),
-		(Type: "char[]", Which: "Char" ),
-		(Type: "byte[]", Which: "Byte" ),
-	};
-	var argsRegion = new List<(string Type, string Which)>()
-	{
-		(Type: "string", Which: "Char" ),
-		(Type: "char[]", Which: "Char" ),
-		(Type: "byte[]", Which: "Byte" ),
+		(Type: "string", Which: "Char", Region: false ),
+		(Type: "char[]", Which: "Char", Region: false ),
+		(Type: "byte[]", Which: "Byte", Region: false ),
+		(Type: "ReadOnlySpan<char>", Which: "Char", Region: true ),
+		(Type: "ReadOnlySpan<byte>", Which: "Byte", Region: true ),
 	};
 	bool line;
 #>
@@ -31,7 +27,7 @@ namespace Innovoft
 	line = false;
 #>
 <#
-	foreach (var arg in argsComplete)
+	foreach (var arg in args)
 	{
 		if (line)
 		{
@@ -42,6 +38,12 @@ namespace Innovoft
 		else
 		{
 			line = true;
+		}
+		if (arg.Region)
+		{
+#>
+#if NETSTANDARD2_1 || NET5_0_OR_GREATER
+<#
 		}
 #>
 		public static DateTime ParseOZ(<#= arg.Type #> parse)
@@ -212,22 +214,14 @@ namespace Innovoft
 			}
 		}
 <#
-	}
+		if (arg.Region)
+		{
 #>
-<#
-	if (line)
-	{
-#>
-
-<#
-	}
-	else
-	{
-		line = true;
-	}
-#>
-#if NETSTANDARD2_1 || NET5_0_OR_GREATER
 #endif //NETSTANDARD2_1 || NET5_0_OR_GREATER
+<#
+		}
+	}
+#>
 		#endregion //Methods
 	}
 }
