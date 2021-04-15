@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Innovoft
 {
-	public static class ASCIIConverters
+	public static class ASCIIConverter
 	{
 		#region Constants
 		public const byte NUL = 0x00;

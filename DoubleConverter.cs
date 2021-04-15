@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Innovoft
 {
-	public static class DoubleConverters
+	public static class DoubleConverter
 	{
 		#region Constants
-		private const byte MinusByte = ASCIIConverters.Minus;
-		private const byte Digit0Byte = ASCIIConverters.Digit0;
+		private const byte MinusByte = ASCIIConverter.Minus;
+		private const byte Digit0Byte = ASCIIConverter.Digit0;
 		#endregion //Constants
 
 		#region Methods

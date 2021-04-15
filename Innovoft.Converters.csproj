@@ -35,15 +35,15 @@
 	</ItemGroup>
 
   <ItemGroup>
-		<T4Transform Include="DateTimeConverters.ParseO.tt">
-			<Link>DateTimeConverters.ParseO.tt</Link>
+		<T4Transform Include="DateTimeConverter.ParseO.tt">
+			<Link>DateTimeConverter.ParseO.tt</Link>
 			<OutputFilePath>$(ProjectDir)</OutputFilePath>
-			<OutputFileName>DateTimeConverters.ParseO.tt.cs</OutputFileName>
-			<LastGenOutput>$(ProjectDir)DateTimeConverters.ParseO.tt.cs</LastGenOutput>
+			<OutputFileName>DateTimeConverter.ParseO.tt.cs</OutputFileName>
+			<LastGenOutput>$(ProjectDir)DateTimeConverter.ParseO.tt.cs</LastGenOutput>
 		</T4Transform>
-		<None Include="DateTimeConverters.ParseO.tt.cs">
+		<None Include="DateTimeConverter.ParseO.tt.cs">
 			<AutoGen>True</AutoGen>
-			<DependentUpon>DateTimeConverters.ParseO.tt</DependentUpon>
+			<DependentUpon>DateTimeConverter.ParseO.tt</DependentUpon>
 		</None>
 	</ItemGroup>
 
