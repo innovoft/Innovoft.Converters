@@ -358,6 +358,11 @@ namespace Innovoft
 			return ParseO(parse, offset, length, DateTimeKind.Local);
 		}
 
+		public static DateTime ParseOU(byte[] parse, int offset, int length)
+		{
+			return ParseO(parse, offset, length, DateTimeKind.Unspecified);
+		}
+
 		public static DateTime ParseO(byte[] parse, int offset, int length, DateTimeKind kind)
 		{
 			//yyyy-MM-ddTHH:mm:ss.fffffffZ
