@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Innovoft
 {
-	public static class DateTimeConverters
+	public static partial class DateTimeConverters
 	{
 		#region Constants
 		private const char ZChar = CharConverters.Z;

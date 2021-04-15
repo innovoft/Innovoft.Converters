@@ -34,6 +34,19 @@
 		<None Remove=".gitignore" />
 	</ItemGroup>
 
+  <ItemGroup>
+		<T4Transform Include="DateTimeConverters.ParseO.tt">
+			<Link>DateTimeConverters.ParseO.tt</Link>
+			<OutputFilePath>$(ProjectDir)</OutputFilePath>
+			<OutputFileName>DateTimeConverters.ParseO.tt.cs</OutputFileName>
+			<LastGenOutput>$(ProjectDir)DateTimeConverters.ParseO.tt.cs</LastGenOutput>
+		</T4Transform>
+		<None Include="DateTimeConverters.ParseO.tt.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>DateTimeConverters.ParseO.tt</DependentUpon>
+		</None>
+	</ItemGroup>
+
 	<!--T4-->
 	<Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TextTemplating\Microsoft.TextTemplating.targets" />
 
