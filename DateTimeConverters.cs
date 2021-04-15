@@ -165,7 +165,7 @@ namespace Innovoft
 			}
 		}
 
-		public static DateTime ParseOZ(string parse, DateTimeKind kind)
+		public static DateTime ParseO(string parse, DateTimeKind kind)
 		{
 			//yyyy-MM-ddTHH:mm:ss.fffffffZ
 			//012345678901234567890123456
