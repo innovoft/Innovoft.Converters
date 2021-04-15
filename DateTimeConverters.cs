@@ -17,6 +17,11 @@ namespace Innovoft
 			return ParseO(parse, DateTimeKind.Utc);
 		}
 
+		public static DateTime ParseOL(string parse)
+		{
+			return ParseO(parse, DateTimeKind.Local);
+		}
+
 		public static DateTime ParseO(string parse, DateTimeKind kind)
 		{
 			//yyyy-MM-ddTHH:mm:ss.fffffffZ
