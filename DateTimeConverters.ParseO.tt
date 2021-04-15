@@ -13,10 +13,6 @@
 		(Type: "Span<char>", Which: "Char", Region: true ),
 		(Type: "ReadOnlySpan<byte>", Which: "Byte", Region: true ),
 		(Type: "Span<byte>", Which: "Byte", Region: true ),
-		(Type: "ReadOnlyMemory<char>", Which: "Char", Region: true ),
-		(Type: "Memory<char>", Which: "Char", Region: true ),
-		(Type: "ReadOnlyMemory<byte>", Which: "Byte", Region: true ),
-		(Type: "Memory<byte>", Which: "Byte", Region: true ),
 	};
 	bool line;
 #>
