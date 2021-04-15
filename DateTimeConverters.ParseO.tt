@@ -10,6 +10,12 @@
 		(Type: "char[]", Which: "Char" ),
 		(Type: "byte[]", Which: "Byte" ),
 	};
+	var argsRegion = new List<(string Type, string Which)>()
+	{
+		(Type: "string", Which: "Char" ),
+		(Type: "char[]", Which: "Char" ),
+		(Type: "byte[]", Which: "Byte" ),
+	};
 	bool line;
 #>
 using System;
@@ -208,6 +214,20 @@ namespace Innovoft
 <#
 	}
 #>
+<#
+	if (line)
+	{
+#>
+
+<#
+	}
+	else
+	{
+		line = true;
+	}
+#>
+#if NETSTANDARD2_1 || NET5_0_OR_GREATER
+#endif //NETSTANDARD2_1 || NET5_0_OR_GREATER
 		#endregion //Methods
 	}
 }
