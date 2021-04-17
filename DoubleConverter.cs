@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Xml;
 
 namespace Innovoft
 {
@@ -13,6 +14,210 @@ namespace Innovoft
 		#endregion //Constants
 
 		#region Methods
+		public static double Parse(XmlNode parse)
+		{
+			return double.Parse(parse.InnerText);
+		}
+
+		public static double? ParseNullable(string text)
+		{
+			if (string.IsNullOrWhiteSpace(text))
+			{
+				return null;
+			}
+			else
+			{
+				return double.Parse(text);
+			}
+		}
+
+		public static object ParseObject(string text)
+		{
+			return double.Parse(text);
+		}
+
+		public static bool TryParseObject(string parse, out object value)
+		{
+			if (double.TryParse(parse, out var parsed))
+			{
+				value = parsed;
+				return true;
+			}
+			else
+			{
+				value = null;
+				return false;
+			}
+		}
+
+		public static int AscendingComparison(double x, double y)
+		{
+			if (x == y)
+			{
+				return 0;
+			}
+			if (x > y)
+			{
+				return +1;
+			}
+			else
+			{
+				return -1;
+			}
+		}
+
+		public static int AscendingComparison(object x, object y)
+		{
+			var xv = (double)x;
+			var yv = (double)y;
+			if (xv == yv)
+			{
+				return 0;
+			}
+			if (xv > yv)
+			{
+				return +1;
+			}
+			else
+			{
+				return -1;
+			}
+		}
+
+		public static int DescendingComparison(double x, double y)
+		{
+			if (x == y)
+			{
+				return 0;
+			}
+			if (x < y)
+			{
+				return +1;
+			}
+			else
+			{
+				return -1;
+			}
+		}
+
+		public static int DescendingComparison(object x, object y)
+		{
+			var xv = (double)x;
+			var yv = (double)y;
+			if (xv == yv)
+			{
+				return 0;
+			}
+			if (xv < yv)
+			{
+				return +1;
+			}
+			else
+			{
+				return -1;
+			}
+		}
+
+		public static bool IsNormal(double value)
+		{
+			if (double.IsNaN(value))
+			{
+				return false;
+			}
+			if (double.IsInfinity(value))
+			{
+				return false;
+			}
+			return true;
+		}
+
+		public static double GetNaN(double value)
+		{
+			return double.NaN;
+		}
+
+		public static double GetNaN()
+		{
+			return double.NaN;
+		}
+
+		#region Max
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static double Max(double v0, double v1)
+		{
+			return Math.Max(v0, v1);
+		}
+
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static double Max(double v0, double v1, double v2)
+		{
+			var max = v0;
+			if (v1 > max)
+			{
+				max = v1;
+			}
+			if (v2 > max)
+			{
+				max = v2;
+			}
+			return max;
+		}
+
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static double Max(double v0, double v1, double v2, double v3)
+		{
+			var max = v0;
+			if (v1 > max)
+			{
+				max = v1;
+			}
+			if (v2 > max)
+			{
+				max = v2;
+			}
+			if (v3 > max)
+			{
+				max = v3;
+			}
+			return max;
+		}
+
+		public static double Max(params double[] values)
+		{
+			var max = values[0];
+			for (var i = values.Length - 1; i > 0; --i)
+			{
+				var value = values[i];
+				if (value > max)
+				{
+					max = value;
+				}
+			}
+			return max;
+		}
+
+		public static double Max(IEnumerable<double> values)
+		{
+			using (var enumerator = values.GetEnumerator())
+			{
+				if (!enumerator.MoveNext())
+				{
+					throw new ArgumentException(nameof(values));
+				}
+				var max = enumerator.Current;
+				while (enumerator.MoveNext())
+				{
+					var value = enumerator.Current;
+					if (value > max)
+					{
+						max = value;
+					}
+				}
+				return max;
+			}
+		}
+		#endregion //Max
+
 		//[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		//public static int WriteDouble5(byte[] buffer, int offset, double value)
 		//{
