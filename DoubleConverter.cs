@@ -120,6 +120,9 @@ namespace Innovoft
 
 		public static bool IsNormal(double value)
 		{
+#if NETSTANDARD2_1 || NET5_0_OR_GREATER
+			return double.IsNormal(value);
+#else //NETSTANDARD2_1 || NET5_0_OR_GREATER
 			if (double.IsNaN(value))
 			{
 				return false;
@@ -129,6 +132,7 @@ namespace Innovoft
 				return false;
 			}
 			return true;
+#endif //NETSTANDARD2_1 || NET5_0_OR_GREATER
 		}
 
 		public static double GetNaN(double value)
@@ -141,7 +145,7 @@ namespace Innovoft
 			return double.NaN;
 		}
 
-		#region Max
+#region Max
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static double Max(double v0, double v1)
 		{
@@ -216,7 +220,7 @@ namespace Innovoft
 				return max;
 			}
 		}
-		#endregion //Max
+#endregion //Max
 
 		//[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		//public static int WriteDouble5(byte[] buffer, int offset, double value)
@@ -294,6 +298,6 @@ namespace Innovoft
 
 		//	return offset;
 		//}
-		#endregion //Methods
+#endregion //Methods
 	}
 }
