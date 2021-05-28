@@ -145,7 +145,7 @@ namespace Innovoft
 			return double.NaN;
 		}
 
-#region Max
+		#region Max
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static double Max(double v0, double v1)
 		{
@@ -220,7 +220,25 @@ namespace Innovoft
 				return max;
 			}
 		}
-#endregion //Max
+		#endregion //Max
+
+		#region NaN
+		public static double NaN()
+		{
+			return double.NaN;
+		}
+
+		public static double NaN(double value)
+		{
+			return double.NaN;
+		}
+
+		public static bool NaN(double value, out double converted)
+		{
+			converted = double.NaN;
+			return true;
+		}
+		#endregion //NaN
 
 		//[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		//public static int WriteDouble5(byte[] buffer, int offset, double value)
@@ -298,6 +316,6 @@ namespace Innovoft
 
 		//	return offset;
 		//}
-#endregion //Methods
+		#endregion //Methods
 	}
 }
